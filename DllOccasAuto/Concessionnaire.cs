@@ -53,7 +53,7 @@ namespace DllOccasAuto
         public static void GetCNXBDD()
         {
             Dictionary<string, string> dico = (Dictionary<string, string>)Serialise.Recup("CNXBDD.TXT");
-            dico.TryGetValue("serveur", out Concessionnaire.cnx.Serveur);
+            dico.TryGetValue("serveur", out Concessionnaire.cnx.Server);
             dico.TryGetValue("database", out Concessionnaire.cnx.Database);
             dico.TryGetValue("username", out Concessionnaire.cnx.Username);
             dico.TryGetValue("Password", out Concessionnaire.cnx.Password);

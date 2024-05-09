@@ -261,7 +261,7 @@
             this.btnValidBDD.Location = new System.Drawing.Point(244, 398);
             this.btnValidBDD.Name = "btnValidBDD";
             this.btnValidBDD.Size = new System.Drawing.Size(75, 23);
-            this.btnValidBDD.TabIndex = 30;
+            this.btnValidBDD.TabIndex = 104;
             this.btnValidBDD.Text = "Valider";
             this.btnValidBDD.UseVisualStyleBackColor = true;
             this.btnValidBDD.Click += new System.EventHandler(this.btnValidBDD_Click);
@@ -344,7 +344,7 @@
             this.txtServeur.Margin = new System.Windows.Forms.Padding(2);
             this.txtServeur.Name = "txtServeur";
             this.txtServeur.Size = new System.Drawing.Size(195, 20);
-            this.txtServeur.TabIndex = 25;
+            this.txtServeur.TabIndex = 100;
             // 
             // txtUser
             // 
@@ -352,15 +352,16 @@
             this.txtUser.Margin = new System.Windows.Forms.Padding(2);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(196, 20);
-            this.txtUser.TabIndex = 24;
+            this.txtUser.TabIndex = 102;
             // 
             // txtDatabase
             // 
             this.txtDatabase.Location = new System.Drawing.Point(124, 258);
             this.txtDatabase.Margin = new System.Windows.Forms.Padding(2);
             this.txtDatabase.Name = "txtDatabase";
+            this.txtDatabase.ShortcutsEnabled = false;
             this.txtDatabase.Size = new System.Drawing.Size(196, 20);
-            this.txtDatabase.TabIndex = 23;
+            this.txtDatabase.TabIndex = 101;
             // 
             // txtPSW
             // 
@@ -368,7 +369,7 @@
             this.txtPSW.Margin = new System.Windows.Forms.Padding(2);
             this.txtPSW.Name = "txtPSW";
             this.txtPSW.Size = new System.Drawing.Size(196, 20);
-            this.txtPSW.TabIndex = 22;
+            this.txtPSW.TabIndex = 103;
             // 
             // Connexion
             // 

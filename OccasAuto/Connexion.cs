@@ -25,7 +25,21 @@ namespace OccasAuto
             InitializeComponent();
             VoirMDP();
             lblErr.Text = "";
-            StockerCNXBDD();
+            string s = "";
+            string d = "";
+            string u = "";
+            string p = "";
+
+            Dictionary<string, string> dico = (Dictionary<string, string>)Serialise.Recup("CNXBDD.TXT");
+            dico.TryGetValue("serveur", out s);
+            dico.TryGetValue("database", out d);
+            dico.TryGetValue("username", out u);
+            dico.TryGetValue("password", out p);
+
+            txtServeur.Text = s;
+            txtDatabase.Text = d;
+            txtUser.Text = u;
+            txtPSW.Text = p;
         }
                 
         // Switch between sing in or login 
@@ -87,7 +101,6 @@ namespace OccasAuto
             lblErr.Text = "";
             try // database responding ?
             {
-                List<Utilisateur> utilisateurs = Utilisateur.GetUtilisateurs();
                 if (txtIdent.Text != string.Empty) 
                 {
                     if (testMDP()) // string password

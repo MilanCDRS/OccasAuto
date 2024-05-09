@@ -18,7 +18,7 @@ namespace DllOccasAuto
         private string login;
         private string mdp;
 
-        private CnxBDD cnx = new CnxBDD();
+        private static CnxBDD cnx = new CnxBDD();
 
         public Utilisateur()
         {
@@ -39,11 +39,22 @@ namespace DllOccasAuto
 
         public static void GetCNXBDD()
         {
+            string s = "";
+            string d = "";
+            string u = "";
+            string p = "";
+
             Dictionary<string, string> dico = (Dictionary<string, string>)Serialise.Recup("CNXBDD.TXT");
-            dico.TryGetValue("serveur", out Utilisateur.cnx.Serveur);
-            dico.TryGetValue("database", out Utilisateur.cnx.Database);
-            dico.TryGetValue("username", out Utilisateur.cnx.Username);
-            dico.TryGetValue("password", out Utilisateur.cnx.Password);
+            dico.TryGetValue("serveur", out s);
+            dico.TryGetValue("database", out d);
+            dico.TryGetValue("username", out u);
+            dico.TryGetValue("password", out p);
+
+            Utilisateur.cnx.Server = s;
+            Utilisateur.cnx.Database = d;
+            Utilisateur.cnx.Username = u;
+            Utilisateur.cnx.Password = p;
+
         }
 
         // get all the users from the database
@@ -84,7 +95,6 @@ namespace DllOccasAuto
             Utilisateur.GetCNXBDD();
             if (!Existe(login))
             {
-                //CnxBDD cnx = new CnxBDD("localhost", "bdoccasauto", "root", "root");
                 string req = $"INSERT INTO utilisateur (login, mdp) VALUES ('{login}','{mdp}')";
                 Utilisateur.cnx.RequeteNonQuery(req);
             }

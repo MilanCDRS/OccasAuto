@@ -23,6 +23,7 @@ CREATE TABLE IF NOT EXISTS utilisateur(
     Primary KEY (identifiant, login)
 )Engine=InnoDB;
 
+INSERT INTO Utilisateur (login, mdp) VALUES ('admin', '21232f297a57a5a743894a0e4a801fc3');
 
 INSERT INTO Concessionnaire (nom,prenom,adresse,cp,ville) VALUES 
 ('Davolio', 'Jeanne', '5 rue de la poste', '63000', 'CLERMONT-FERRAND'),
