@@ -11,6 +11,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DllOccasAuto;
+using ConnectionMySQL;
+using Serialiser;
 
 namespace OccasAuto
 {
@@ -23,6 +25,7 @@ namespace OccasAuto
             InitializeComponent();
             VoirMDP();
             lblErr.Text = "";
+            StockerCNXBDD();
         }
                 
         // Switch between sing in or login 
@@ -208,6 +211,25 @@ namespace OccasAuto
         {
             gpParamBDD.Visible = true;
             gpParamBDD.Enabled = true;
+        }
+
+        private void btnValidBDD_Click(object sender, EventArgs e)
+        {
+            StockerCNXBDD();
+            btnCloseParamBDD_Click(sender, e);
+        }
+
+        private void StockerCNXBDD()
+        {
+            Dictionary<string, string> cnx = new Dictionary<string, string>
+            {
+                {"serveur",  txtServeur.Text},
+                {"database", txtDatabase.Text},
+                {"username", txtUser.Text},
+                {"password", txtPSW.Text}
+            };
+
+            Serialise.Sauve("CNXBDD.TXT", cnx);
         }
     }
 }

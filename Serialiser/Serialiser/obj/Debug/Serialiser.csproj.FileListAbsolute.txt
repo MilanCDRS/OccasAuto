@@ -1,0 +1,12 @@
+C:\BTS SIO\C#\Libraries\Serialiser\Serialiser\bin\Debug\Serialiser.dll
+C:\BTS SIO\C#\Libraries\Serialiser\Serialiser\bin\Debug\Serialiser.pdb
+C:\BTS SIO\C#\Libraries\Serialiser\Serialiser\obj\Debug\Serialiser.csproj.AssemblyReference.cache
+C:\BTS SIO\C#\Libraries\Serialiser\Serialiser\obj\Debug\Serialiser.csproj.CoreCompileInputs.cache
+C:\BTS SIO\C#\Libraries\Serialiser\Serialiser\obj\Debug\Serialiser.dll
+C:\BTS SIO\C#\Libraries\Serialiser\Serialiser\obj\Debug\Serialiser.pdb
+C:\Users\Milan\Desktop\OccasAuto\Serialiser\Serialiser\bin\Debug\Serialiser.dll
+C:\Users\Milan\Desktop\OccasAuto\Serialiser\Serialiser\bin\Debug\Serialiser.pdb
+C:\Users\Milan\Desktop\OccasAuto\Serialiser\Serialiser\obj\Debug\Serialiser.csproj.AssemblyReference.cache
+C:\Users\Milan\Desktop\OccasAuto\Serialiser\Serialiser\obj\Debug\Serialiser.csproj.CoreCompileInputs.cache
+C:\Users\Milan\Desktop\OccasAuto\Serialiser\Serialiser\obj\Debug\Serialiser.dll
+C:\Users\Milan\Desktop\OccasAuto\Serialiser\Serialiser\obj\Debug\Serialiser.pdb

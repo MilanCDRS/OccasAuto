@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ConnectionMySQL
 {
+    [Serializable]
     public class CnxBDD
     {
         // VARIABLES

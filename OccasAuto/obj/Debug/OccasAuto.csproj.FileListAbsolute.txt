@@ -108,6 +108,7 @@ C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\K4os.Compression.LZ4.Stream
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\K4os.Hash.xxHash.dll
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\MySql.Data.dll
+C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\Serialiser.dll
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\System.Buffers.dll
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\System.Configuration.ConfigurationManager.dll
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\System.Diagnostics.DiagnosticSource.dll
@@ -120,8 +121,6 @@ C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\ZstdSharp.dll
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\DllOccasAuto.pdb
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\DllOccasAuto.dll.config
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\BouncyCastle.Crypto.xml
-C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\ConnectionMySQL.pdb
-C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\ConnectionMySQL.dll.config
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\Google.Protobuf.pdb
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\Google.Protobuf.xml
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\K4os.Compression.LZ4.xml
@@ -129,6 +128,7 @@ C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\K4os.Compression.LZ4.Stream
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\K4os.Hash.xxHash.xml
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\MySql.Data.xml
+C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\Serialiser.pdb
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\System.Buffers.xml
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Milan\Desktop\OccasAuto\OccasAuto\bin\Debug\System.IO.Pipelines.xml

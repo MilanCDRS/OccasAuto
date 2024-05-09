@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DllOccasAuto", "DllOccasAut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectionMySQL", "ConnectionMySQL\ConnectionMySQL\ConnectionMySQL.csproj", "{15DA9676-FB3B-4ED1-B19F-174DD57DD15A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialiser", "Serialiser\Serialiser\Serialiser.csproj", "{A992ADD0-B62F-4061-8E74-E5D7E0321D0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{15DA9676-FB3B-4ED1-B19F-174DD57DD15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15DA9676-FB3B-4ED1-B19F-174DD57DD15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15DA9676-FB3B-4ED1-B19F-174DD57DD15A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A992ADD0-B62F-4061-8E74-E5D7E0321D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A992ADD0-B62F-4061-8E74-E5D7E0321D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A992ADD0-B62F-4061-8E74-E5D7E0321D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A992ADD0-B62F-4061-8E74-E5D7E0321D0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

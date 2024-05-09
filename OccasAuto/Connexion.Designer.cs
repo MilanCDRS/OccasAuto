@@ -43,16 +43,18 @@
             this.BtnSeePSW = new System.Windows.Forms.PictureBox();
             this.btnParam = new System.Windows.Forms.Label();
             this.gpParamBDD = new System.Windows.Forms.GroupBox();
-            this.txtPSW = new System.Windows.Forms.TextBox();
-            this.txtDatabase = new System.Windows.Forms.TextBox();
-            this.txtUser = new System.Windows.Forms.TextBox();
-            this.txtServeur = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnCloseParamBDD = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.btnAnnulerBDD = new System.Windows.Forms.Button();
+            this.btnValidBDD = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnCloseParamBDD = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtServeur = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtDatabase = new System.Windows.Forms.TextBox();
+            this.txtPSW = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSeePSW)).BeginInit();
             this.gpParamBDD.SuspendLayout();
@@ -87,7 +89,7 @@
             // txtMDP2
             // 
             this.txtMDP2.Location = new System.Drawing.Point(122, 315);
-            this.txtMDP2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMDP2.Margin = new System.Windows.Forms.Padding(2);
             this.txtMDP2.Name = "txtMDP2";
             this.txtMDP2.Size = new System.Drawing.Size(188, 20);
             this.txtMDP2.TabIndex = 14;
@@ -110,7 +112,7 @@
             // txtMDP
             // 
             this.txtMDP.Location = new System.Drawing.Point(122, 271);
-            this.txtMDP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMDP.Margin = new System.Windows.Forms.Padding(2);
             this.txtMDP.Name = "txtMDP";
             this.txtMDP.Size = new System.Drawing.Size(188, 20);
             this.txtMDP.TabIndex = 11;
@@ -119,7 +121,7 @@
             // txtIdent
             // 
             this.txtIdent.Location = new System.Drawing.Point(122, 228);
-            this.txtIdent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIdent.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdent.Name = "txtIdent";
             this.txtIdent.Size = new System.Drawing.Size(188, 20);
             this.txtIdent.TabIndex = 10;
@@ -151,7 +153,7 @@
             // btnValider
             // 
             this.btnValider.Location = new System.Drawing.Point(217, 376);
-            this.btnValider.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnValider.Margin = new System.Windows.Forms.Padding(2);
             this.btnValider.Name = "btnValider";
             this.btnValider.Size = new System.Drawing.Size(92, 24);
             this.btnValider.TabIndex = 7;
@@ -190,7 +192,7 @@
             // 
             this.pictureBox1.Image = global::OccasAuto.Properties.Resources.clefs;
             this.pictureBox1.Location = new System.Drawing.Point(9, 7);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(53, 83);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -201,7 +203,7 @@
             // 
             this.BtnSeePSW.Image = global::OccasAuto.Properties.Resources.eyePSW;
             this.BtnSeePSW.Location = new System.Drawing.Point(322, 271);
-            this.BtnSeePSW.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnSeePSW.Margin = new System.Windows.Forms.Padding(2);
             this.BtnSeePSW.Name = "BtnSeePSW";
             this.BtnSeePSW.Size = new System.Drawing.Size(18, 17);
             this.BtnSeePSW.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -223,6 +225,8 @@
             // 
             // gpParamBDD
             // 
+            this.gpParamBDD.Controls.Add(this.btnAnnulerBDD);
+            this.gpParamBDD.Controls.Add(this.btnValidBDD);
             this.gpParamBDD.Controls.Add(this.label9);
             this.gpParamBDD.Controls.Add(this.label8);
             this.gpParamBDD.Controls.Add(this.label7);
@@ -241,89 +245,38 @@
             this.gpParamBDD.Visible = false;
             this.gpParamBDD.Enter += new System.EventHandler(this.gpParamBDD_Enter);
             // 
-            // txtPSW
+            // btnAnnulerBDD
             // 
-            this.txtPSW.Location = new System.Drawing.Point(124, 343);
-            this.txtPSW.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPSW.Name = "txtPSW";
-            this.txtPSW.Size = new System.Drawing.Size(196, 20);
-            this.txtPSW.TabIndex = 22;
-            this.txtPSW.Text = "root";
+            this.btnAnnulerBDD.Location = new System.Drawing.Point(163, 398);
+            this.btnAnnulerBDD.Name = "btnAnnulerBDD";
+            this.btnAnnulerBDD.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnAnnulerBDD.Size = new System.Drawing.Size(75, 23);
+            this.btnAnnulerBDD.TabIndex = 31;
+            this.btnAnnulerBDD.Text = "Annuler";
+            this.btnAnnulerBDD.UseVisualStyleBackColor = true;
+            this.btnAnnulerBDD.Click += new System.EventHandler(this.btnCloseParamBDD_Click);
             // 
-            // txtDatabase
+            // btnValidBDD
             // 
-            this.txtDatabase.Location = new System.Drawing.Point(124, 258);
-            this.txtDatabase.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDatabase.Name = "txtDatabase";
-            this.txtDatabase.Size = new System.Drawing.Size(196, 20);
-            this.txtDatabase.TabIndex = 23;
-            this.txtDatabase.Text = "bdoccasauto";
+            this.btnValidBDD.Location = new System.Drawing.Point(244, 398);
+            this.btnValidBDD.Name = "btnValidBDD";
+            this.btnValidBDD.Size = new System.Drawing.Size(75, 23);
+            this.btnValidBDD.TabIndex = 30;
+            this.btnValidBDD.Text = "Valider";
+            this.btnValidBDD.UseVisualStyleBackColor = true;
+            this.btnValidBDD.Click += new System.EventHandler(this.btnValidBDD_Click);
             // 
-            // txtUser
+            // label9
             // 
-            this.txtUser.Location = new System.Drawing.Point(124, 301);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(196, 20);
-            this.txtUser.TabIndex = 24;
-            this.txtUser.Text = "root";
-            // 
-            // txtServeur
-            // 
-            this.txtServeur.Location = new System.Drawing.Point(124, 217);
-            this.txtServeur.Margin = new System.Windows.Forms.Padding(2);
-            this.txtServeur.Name = "txtServeur";
-            this.txtServeur.Size = new System.Drawing.Size(195, 20);
-            this.txtServeur.TabIndex = 25;
-            this.txtServeur.Text = "localhost";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Wheat;
-            this.label1.Location = new System.Drawing.Point(45, 134);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 20);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Parametres de la base de données";
-            // 
-            // btnCloseParamBDD
-            // 
-            this.btnCloseParamBDD.AutoSize = true;
-            this.btnCloseParamBDD.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseParamBDD.Location = new System.Drawing.Point(296, 16);
-            this.btnCloseParamBDD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.btnCloseParamBDD.Name = "btnCloseParamBDD";
-            this.btnCloseParamBDD.Size = new System.Drawing.Size(35, 37);
-            this.btnCloseParamBDD.TabIndex = 22;
-            this.btnCloseParamBDD.Text = "X";
-            this.btnCloseParamBDD.Click += new System.EventHandler(this.btnCloseParamBDD_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Wheat;
-            this.label6.Location = new System.Drawing.Point(41, 215);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 20);
-            this.label6.TabIndex = 26;
-            this.label6.Text = "Serveur :";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Wheat;
-            this.label7.Location = new System.Drawing.Point(27, 256);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(87, 20);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "Database :";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Wheat;
+            this.label9.Location = new System.Drawing.Point(28, 343);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(86, 20);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "Password :";
             // 
             // label8
             // 
@@ -337,17 +290,85 @@
             this.label8.TabIndex = 28;
             this.label8.Text = "Username :";
             // 
-            // label9
+            // label7
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Wheat;
-            this.label9.Location = new System.Drawing.Point(28, 343);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 20);
-            this.label9.TabIndex = 29;
-            this.label9.Text = "Password :";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Wheat;
+            this.label7.Location = new System.Drawing.Point(27, 256);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(87, 20);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "Database :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Wheat;
+            this.label6.Location = new System.Drawing.Point(41, 215);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(72, 20);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Serveur :";
+            // 
+            // btnCloseParamBDD
+            // 
+            this.btnCloseParamBDD.AutoSize = true;
+            this.btnCloseParamBDD.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseParamBDD.Location = new System.Drawing.Point(296, 16);
+            this.btnCloseParamBDD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnCloseParamBDD.Name = "btnCloseParamBDD";
+            this.btnCloseParamBDD.Size = new System.Drawing.Size(35, 37);
+            this.btnCloseParamBDD.TabIndex = 22;
+            this.btnCloseParamBDD.Text = "X";
+            this.btnCloseParamBDD.Click += new System.EventHandler(this.btnCloseParamBDD_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Wheat;
+            this.label1.Location = new System.Drawing.Point(45, 134);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(256, 20);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Parametres de la base de données";
+            // 
+            // txtServeur
+            // 
+            this.txtServeur.Location = new System.Drawing.Point(124, 217);
+            this.txtServeur.Margin = new System.Windows.Forms.Padding(2);
+            this.txtServeur.Name = "txtServeur";
+            this.txtServeur.Size = new System.Drawing.Size(195, 20);
+            this.txtServeur.TabIndex = 25;
+            // 
+            // txtUser
+            // 
+            this.txtUser.Location = new System.Drawing.Point(124, 301);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(196, 20);
+            this.txtUser.TabIndex = 24;
+            // 
+            // txtDatabase
+            // 
+            this.txtDatabase.Location = new System.Drawing.Point(124, 258);
+            this.txtDatabase.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDatabase.Name = "txtDatabase";
+            this.txtDatabase.Size = new System.Drawing.Size(196, 20);
+            this.txtDatabase.TabIndex = 23;
+            // 
+            // txtPSW
+            // 
+            this.txtPSW.Location = new System.Drawing.Point(124, 343);
+            this.txtPSW.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPSW.Name = "txtPSW";
+            this.txtPSW.Size = new System.Drawing.Size(196, 20);
+            this.txtPSW.TabIndex = 22;
             // 
             // Connexion
             // 
@@ -371,7 +392,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnValider);
             this.Controls.Add(this.btnFermer);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(379, 490);
             this.MinimumSize = new System.Drawing.Size(273, 490);
             this.Name = "Connexion";
@@ -412,5 +433,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnAnnulerBDD;
+        private System.Windows.Forms.Button btnValidBDD;
     }
 }

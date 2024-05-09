@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Serialiser;
 
 namespace DllOccasAuto
 {
@@ -20,8 +21,8 @@ namespace DllOccasAuto
         private string cp;
         private string ville;
 
-        private CnxBDD cnx = new CnxBDD("localhost", "bdoccasauto", "root", "root");
-
+        private CnxBDD cnx = new CnxBDD();
+        
         public Concessionnaire(int id, string nom, string prenom, string adresse, string cp, string ville)
         {
             this.Id = id;
@@ -30,6 +31,7 @@ namespace DllOccasAuto
             this.Adresse = adresse;
             this.CP = cp;
             this.Ville = ville;
+            Concessionnaire.GetCNXBDD();
         }
 
         public Concessionnaire(string nom, string prenom, string adresse, string cp, string ville)
@@ -40,10 +42,21 @@ namespace DllOccasAuto
             this.Adresse = adresse;
             this.CP = cp;
             this.Ville = ville;
+            Concessionnaire.GetCNXBDD();
         }
 
         public Concessionnaire()
         {
+            Concessionnaire.GetCNXBDD();
+        }
+
+        public static void GetCNXBDD()
+        {
+            Dictionary<string, string> dico = (Dictionary<string, string>)Serialise.Recup("CNXBDD.TXT");
+            dico.TryGetValue("serveur", out Concessionnaire.cnx.Serveur);
+            dico.TryGetValue("database", out Concessionnaire.cnx.Database);
+            dico.TryGetValue("username", out Concessionnaire.cnx.Username);
+            dico.TryGetValue("Password", out Concessionnaire.cnx.Password);
         }
 
         public int Id { get => id; set => id = value; }
