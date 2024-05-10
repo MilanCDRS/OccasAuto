@@ -4,7 +4,7 @@ USE bdoccasauto;
 
 
 DROP TABLE IF EXISTS Concessionnaire;
-CREATE TABLE IF NOT EXISTS Concessionnaire
+CREATE TABLE IF NOT EXISTS Concessionnaire(
  id INT(3) auto_increment,
     nom VARCHAR(15),
     prenom VARCHAR(15),
