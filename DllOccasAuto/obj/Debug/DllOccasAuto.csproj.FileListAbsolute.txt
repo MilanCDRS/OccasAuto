@@ -46,3 +46,5 @@ C:\BTSSIO\C#\OccasAuto\DllOccasAuto\obj\Debug\DllOccasAuto.dll
 C:\BTSSIO\C#\OccasAuto\DllOccasAuto\obj\Debug\DllOccasAuto.pdb
 C:\Users\Milan\Desktop\OccasAuto\DllOccasAuto\obj\Debug\DllOccasAuto.csproj.AssemblyReference.cache
 C:\Users\Milan\Desktop\OccasAuto\DllOccasAuto\obj\Debug\DllOccasAuto.csproj.CoreCompileInputs.cache
+C:\Users\Milan\source\repos\OccasAuto\DllOccasAuto\obj\Debug\DllOccasAuto.csproj.AssemblyReference.cache
+C:\Users\Milan\source\repos\OccasAuto\DllOccasAuto\obj\Debug\DllOccasAuto.csproj.CoreCompileInputs.cache

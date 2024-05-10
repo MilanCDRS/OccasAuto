@@ -149,7 +149,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BDDSQL.txt" />
     <None Include="Resources\TracePneuHoriz.png" />
     <None Include="Resources\voitureLOGO.png" />
     <None Include="Resources\clefs.png" />

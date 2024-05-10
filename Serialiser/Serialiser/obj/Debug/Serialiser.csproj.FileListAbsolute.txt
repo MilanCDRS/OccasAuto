@@ -10,3 +10,9 @@ C:\Users\Milan\Desktop\OccasAuto\Serialiser\Serialiser\obj\Debug\Serialiser.cspr
 C:\Users\Milan\Desktop\OccasAuto\Serialiser\Serialiser\obj\Debug\Serialiser.csproj.CoreCompileInputs.cache
 C:\Users\Milan\Desktop\OccasAuto\Serialiser\Serialiser\obj\Debug\Serialiser.dll
 C:\Users\Milan\Desktop\OccasAuto\Serialiser\Serialiser\obj\Debug\Serialiser.pdb
+C:\Users\Milan\source\repos\OccasAuto\Serialiser\Serialiser\bin\Debug\Serialiser.dll
+C:\Users\Milan\source\repos\OccasAuto\Serialiser\Serialiser\bin\Debug\Serialiser.pdb
+C:\Users\Milan\source\repos\OccasAuto\Serialiser\Serialiser\obj\Debug\Serialiser.csproj.AssemblyReference.cache
+C:\Users\Milan\source\repos\OccasAuto\Serialiser\Serialiser\obj\Debug\Serialiser.csproj.CoreCompileInputs.cache
+C:\Users\Milan\source\repos\OccasAuto\Serialiser\Serialiser\obj\Debug\Serialiser.dll
+C:\Users\Milan\source\repos\OccasAuto\Serialiser\Serialiser\obj\Debug\Serialiser.pdb

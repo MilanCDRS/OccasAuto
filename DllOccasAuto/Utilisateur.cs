@@ -45,10 +45,12 @@ namespace DllOccasAuto
             string p = "";
 
             Dictionary<string, string> dico = (Dictionary<string, string>)Serialise.Recup("CNXBDD.TXT");
-            dico.TryGetValue("serveur", out s);
-            dico.TryGetValue("database", out d);
-            dico.TryGetValue("username", out u);
-            dico.TryGetValue("password", out p);
+            if (dico is Dictionary<string, string>){
+                dico.TryGetValue("serveur", out s);
+                dico.TryGetValue("database", out d);
+                dico.TryGetValue("username", out u);
+                dico.TryGetValue("password", out p);
+            }
 
             Utilisateur.cnx.Server = s;
             Utilisateur.cnx.Database = d;

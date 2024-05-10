@@ -52,11 +52,24 @@ namespace DllOccasAuto
 
         public static void GetCNXBDD()
         {
+            string s = "";
+            string d = "";
+            string u = "";
+            string p = "";
+
             Dictionary<string, string> dico = (Dictionary<string, string>)Serialise.Recup("CNXBDD.TXT");
-            dico.TryGetValue("serveur", out Concessionnaire.cnx.Server);
-            dico.TryGetValue("database", out Concessionnaire.cnx.Database);
-            dico.TryGetValue("username", out Concessionnaire.cnx.Username);
-            dico.TryGetValue("Password", out Concessionnaire.cnx.Password);
+            if (dico is Dictionary<string, string>)
+            {
+                dico.TryGetValue("serveur", out s);
+                dico.TryGetValue("database", out d);
+                dico.TryGetValue("username", out u);
+                dico.TryGetValue("password", out p);
+            }
+
+            Concessionnaire.cnx.Server = s;
+            Concessionnaire.cnx.Database = d;
+            Concessionnaire.cnx.Username = u;
+            Concessionnaire.cnx.Password = p;
         }
 
         public int Id { get => id; set => id = value; }

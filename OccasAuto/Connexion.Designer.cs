@@ -345,6 +345,7 @@
             this.txtServeur.Name = "txtServeur";
             this.txtServeur.Size = new System.Drawing.Size(195, 20);
             this.txtServeur.TabIndex = 100;
+            this.txtServeur.Text = "localhost";
             // 
             // txtUser
             // 
@@ -353,6 +354,7 @@
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(196, 20);
             this.txtUser.TabIndex = 102;
+            this.txtUser.Text = "root";
             // 
             // txtDatabase
             // 
@@ -362,6 +364,7 @@
             this.txtDatabase.ShortcutsEnabled = false;
             this.txtDatabase.Size = new System.Drawing.Size(196, 20);
             this.txtDatabase.TabIndex = 101;
+            this.txtDatabase.Text = "bdoccasauto";
             // 
             // txtPSW
             // 
@@ -370,6 +373,7 @@
             this.txtPSW.Name = "txtPSW";
             this.txtPSW.Size = new System.Drawing.Size(196, 20);
             this.txtPSW.TabIndex = 103;
+            this.txtPSW.Text = "root";
             // 
             // Connexion
             // 
