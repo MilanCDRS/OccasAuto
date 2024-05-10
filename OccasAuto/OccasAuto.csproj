@@ -57,6 +57,9 @@
     <Reference Include="MySql.Data, Version=8.1.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.1.0\lib\net462\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="OccasDLL">
+      <HintPath>..\OccasDLL\bin\Debug\OccasDLL.dll</HintPath>
+    </Reference>
     <Reference Include="Serialiser">
       <HintPath>..\Serialiser\Serialiser\bin\Debug\Serialiser.dll</HintPath>
     </Reference>
@@ -159,12 +162,6 @@
     <None Include="Resources\croix1.png" />
     <None Include="Resources\croix.png" />
     <None Include="Resources\eyePSW.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DllOccasAuto\DllOccasAuto.csproj">
-      <Project>{41E998E4-D067-49D6-AE28-D84250406C0D}</Project>
-      <Name>DllOccasAuto</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

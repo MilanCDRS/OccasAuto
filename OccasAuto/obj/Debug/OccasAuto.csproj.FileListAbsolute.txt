@@ -149,7 +149,6 @@ C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\OccasAuto.exe.config
 C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\OccasAuto.exe
 C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\OccasAuto.pdb
 C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\DllOccasAuto.dll
 C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\Google.Protobuf.dll
 C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\K4os.Compression.LZ4.dll
 C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\K4os.Compression.LZ4.Streams.dll
@@ -166,8 +165,6 @@ C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\System.Numerics.Vector
 C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\ZstdSharp.dll
-C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\DllOccasAuto.pdb
-C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\DllOccasAuto.dll.config
 C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\BouncyCastle.Crypto.xml
 C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\Google.Protobuf.pdb
 C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\Google.Protobuf.xml
@@ -193,3 +190,6 @@ C:\Users\Milan\source\repos\OccasAuto\OccasAuto\obj\Debug\OccasAuto.csproj.CoreC
 C:\Users\Milan\source\repos\OccasAuto\OccasAuto\obj\Debug\OccasAuto.csproj.CopyComplete
 C:\Users\Milan\source\repos\OccasAuto\OccasAuto\obj\Debug\OccasAuto.exe
 C:\Users\Milan\source\repos\OccasAuto\OccasAuto\obj\Debug\OccasAuto.pdb
+C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\OccasDLL.dll
+C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\OccasDLL.pdb
+C:\Users\Milan\source\repos\OccasAuto\OccasAuto\bin\Debug\OccasDLL.dll.config

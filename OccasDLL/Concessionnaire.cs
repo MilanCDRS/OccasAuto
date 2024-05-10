@@ -1,6 +1,5 @@
-﻿
-using ConnectionMySQL;
-using MySql.Data.MySqlClient;
+﻿using ConnectionMySQL;
+using Serialiser;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -8,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Serialiser;
+using MySql.Data.MySqlClient;
 
-namespace DllOccasAuto
+namespace OccasDLL
 {
     public class Concessionnaire
     {
@@ -21,8 +21,8 @@ namespace DllOccasAuto
         private string cp;
         private string ville;
 
-        private CnxBDD cnx = new CnxBDD();
-        
+        private static CnxBDD cnxBDD = new CnxBDD();
+
         public Concessionnaire(int id, string nom, string prenom, string adresse, string cp, string ville)
         {
             this.Id = id;
@@ -66,10 +66,10 @@ namespace DllOccasAuto
                 dico.TryGetValue("password", out p);
             }
 
-            Concessionnaire.cnx.Server = s;
-            Concessionnaire.cnx.Database = d;
-            Concessionnaire.cnx.Username = u;
-            Concessionnaire.cnx.Password = p;
+            Concessionnaire.cnxBDD.Server = s;
+            Concessionnaire.cnxBDD.Database = d;
+            Concessionnaire.cnxBDD.Username = u;
+            Concessionnaire.cnxBDD.Password = p;
         }
 
         public int Id { get => id; set => id = value; }
@@ -83,20 +83,20 @@ namespace DllOccasAuto
         // If the parametres are empty, Then, all the concesionnaires are recovered
         public static List<Concessionnaire> Recherche(string nom, string ville)
         {
+            Concessionnaire.GetCNXBDD();
             List<Concessionnaire> concessionnaires = new List<Concessionnaire>();   // New List
-            //CnxBDD cnx = new CnxBDD("localhost", "bdoccasauto", "root", "root");    // Connection to DB
-            string req =    "SELECT id, nom, prenom, adresse, cp, ville " +         // SQL Request
+            string req = "SELECT id, nom, prenom, adresse, cp, ville " +         // SQL Request
                             "FROM concessionnaire " +
                             $"WHERE ville like '%{ville}'" +
-                            $"AND nom like '%{nom}'";
+            $"AND nom like '%{nom}'";
 
-            MySqlDataReader rd = cnx.RequeteReader(req);    // request execution
+            MySqlDataReader rd = Concessionnaire.cnxBDD.RequeteReader(req);    // request execution
             while (rd.Read())
             {       // adding each recovered concessionnaire to the list
                 concessionnaires.Add(new Concessionnaire((int)rd["id"], rd["nom"].ToString(), rd["prenom"].ToString(), rd["adresse"].ToString(), rd["cp"].ToString(), rd["ville"].ToString()));
             }
-            cnx.ConnectionOff();    //Close connection
-            cnx.ReaderOff();        //Close reader
+            cnxBDD.ConnectionOff();    //Close connection
+            cnxBDD.ReaderOff();        //Close reader
             return concessionnaires;
         }
 
@@ -104,30 +104,30 @@ namespace DllOccasAuto
         // unConcessionnaire.AddDB();
         public void AddDB()
         {
-            //CnxBDD cnx = new CnxBDD("localhost", "bdoccasauto", "root", "root");
-            cnx.RequeteNonQuery($"INSERT INTO concessionnaire (nom, prenom, adresse, cp, ville) VALUES ('{Nom}','{Prenom}','{Adresse}','{CP}','{Ville}')");
-            cnx.ConnectionOff();
+            Concessionnaire.GetCNXBDD();
+            cnxBDD.RequeteNonQuery($"INSERT INTO concessionnaire (nom, prenom, adresse, cp, ville) VALUES ('{Nom}','{Prenom}','{Adresse}','{CP}','{Ville}')");
+            cnxBDD.ConnectionOff();
         }
 
         public void UpdateDB()
         {
-            //CnxBDD cnx = new CnxBDD("localhost", "bdoccasauto", "root", "root");
-            cnx.RequeteNonQuery($"UPDATE concessionnaire " +
+            Concessionnaire.GetCNXBDD();
+            cnxBDD.RequeteNonQuery($"UPDATE concessionnaire " +
                                 $"SET nom = '{Nom}', " +
                                 $"prenom = '{Prenom}', " +
                                 $"adresse = '{Adresse}', " +
                                 $"cp = '{CP}', " +
                                 $"ville = '{Ville}' " +
                                 $"WHERE id= {Id};");
-            cnx.ConnectionOff();
+            cnxBDD.ConnectionOff();
         }
 
         // Delete a concesionnaire from the DB tthanks to its id
         public void DeleteDB()
         {
-            //CnxBDD cnx = new CnxBDD("localhost", "bdoccasauto", "root", "root");
-            cnx.RequeteNonQuery($"DELETE FROM concessionnaire WHERE id = {Id}");
-            cnx.ConnectionOff();
+            Concessionnaire.GetCNXBDD();
+            cnxBDD.RequeteNonQuery($"DELETE FROM concessionnaire WHERE id = {Id}");
+            cnxBDD.ConnectionOff();
         }
 
     }
